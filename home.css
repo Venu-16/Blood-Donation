@@ -1,0 +1,116 @@
+/* Full-screen video background */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Content overlay */
+  header, section {
+    position: relative;
+    z-index: 1;
+    color: #fff; /* Text color for readability on video */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: #ffdddd; /* Adjust color for better visibility on video */
+    text-decoration: none;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+/* Donor Statistics Section */
+.donor-stats {
+  text-align: center;
+  margin: 50px auto;
+  color: #fff;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.stat-item {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+}
+
+.stat-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffdddd;
+}
+ /* Blood Compatibility Section */
+.blood-compatibility {
+  margin: 50px auto;
+  text-align: center;
+  color: #fff;
+}
+
+.blood-compatibility h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: rgba(229, 153, 153, 0.9);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #c0b3b2;
+  color: #fff;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody tr:hover {
+  background-color: #cf3524;
+}
+ 
